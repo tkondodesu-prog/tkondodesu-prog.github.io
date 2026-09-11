@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EpubToXtc</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #f5f5f7;
+    --ink: #111114;
+    --ink-soft: #6e6e76;
+    --accent: #3355dd;
+    --card: #ffffff;
+    --hairline: #e7e7ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #111114;
+      --ink: #f2f2f5;
+      --ink-soft: #a5a5ad;
+      --accent: #6f8cf5;
+      --card: #1a1a1e;
+      --hairline: #2a2a30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+    padding: 2rem 1.25rem;
+  }
+  .card {
+    max-width: 26rem;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+  p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin: 0 0 1.75rem;
+  }
+  .store-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
+    transition: opacity 0.15s ease;
+  }
+  .store-link:hover { opacity: 0.85; }
+  footer {
+    margin-top: 2rem;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="icon-1024.png" alt="EpubToXtc アイコン">
+    <h1>EpubToXtc</h1>
+    <p>EPUBをXteink端末で読める形式に変換<br>縦書き書籍をお使いの電子ペーパー端末へ。</p>
+    <a class="store-link" href="https://apps.apple.com/jp/app/epubtoxtc/id6809429285">App Storeで見る</a>
+    <footer>
+      <a href="https://claude.ai/code/artifact/07d6074f-6d4d-4be4-98bc-aeb77420f980">プライバシーポリシー</a>
+    </footer>
+  </div>
+</body>
+</html>
